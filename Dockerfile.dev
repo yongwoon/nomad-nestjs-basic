@@ -1,0 +1,7 @@
+FROM node:14.15.1-alpine
+
+RUN apk update && \
+  apk add git bash && \
+  npm i -g @nestjs/cli
+
+EXPOSE 3000

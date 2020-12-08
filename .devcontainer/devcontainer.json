@@ -1,0 +1,29 @@
+{
+  "name": "nestjs basic - nomad",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "api",
+  "workspaceFolder": "/api",
+  "settings": {
+    "terminal.integrated.shell.linux": null
+  },
+  "extensions": [
+    "mikestead.dotenv",
+    "codezombiech.gitignore",
+    "graphql.vscode-graphql",
+    "ecmel.vscode-html-css",
+    "esbenp.prettier-vscode",
+    "dsznajder.es7-react-js-snippets",
+    "xabikos.reactsnippets",
+    "xabikos.javascriptsnippets",
+    "dbaeumer.vscode-eslint",
+    "formulahendry.terminal",
+    "donjayamanne.githistory",
+    "eamodio.gitlens"
+  ],
+
+  "forwardPorts": [3000],
+  // "runServices": [],
+  // "shutdownAction": "none",
+  // "postCreateCommand": "apt-get update && apt-get install -y curl",
+  // "remoteUser": "vscode"
+}

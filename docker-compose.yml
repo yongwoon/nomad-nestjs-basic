@@ -1,0 +1,16 @@
+version: "3"
+services:
+  api:
+    container_name: dev_nomad_next_basic_app
+    build:
+      context: ./
+      dockerfile: Dockerfile.dev
+    tty: true
+    volumes:
+    - ./:/api
+    ports:
+    - "3000:3000"
+    networks:
+    - dev_nomad_next_basic_network
+networks:
+  dev_nomad_next_basic_network:
