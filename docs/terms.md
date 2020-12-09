@@ -1,0 +1,3 @@
+# Terms
+
+- single-responsibility principle

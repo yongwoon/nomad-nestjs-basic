@@ -1,7 +1,11 @@
 FROM node:14.15.1-alpine
 
+ENV APP_ROOT /api
+
 RUN apk update && \
   apk add git bash && \
   npm i -g @nestjs/cli
+
+WORKDIR $APP_ROOT
 
 EXPOSE 3000
